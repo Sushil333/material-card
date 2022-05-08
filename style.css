@@ -40,3 +40,19 @@
 .flip-card-back {
   transform: rotateY(180deg);
 }
+
+.card-front-p {
+  width: 150px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;;
+}
+
+.card-back-p {
+  display: -webkit-box;
+    -webkit-box-orient: vertical;
+    max-width: 270px;
+    overflow: scroll;
+    text-overflow: ellipsis;
+    height: 275px;
+}
