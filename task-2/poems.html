@@ -1,0 +1,283 @@
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>TITLE</title>
+    <meta name="description" content="DESCRIPTION">
+    <meta name="author" content="">
+    <meta name="robots" content="index, follow" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdn.rtlcss.com/bootstrap/v4.5.3/css/bootstrap.min.css"
+        integrity="sha384-JvExCACAZcHNJEc7156QaHXTnQL3hQBixvj5RV5buE7vgnNEzzskDtx9NQ4p6BJe" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+
+    <style>
+        body {
+            background: #F4F7FD;
+            margin-top: 20px;
+            padding-top: 70px;
+        }
+
+        span.line {
+            width: 85%;
+            text-align: justify;
+            display: inline-block;
+        }
+
+        br {
+            display: block;
+            margin: 8px 0;
+        }
+
+        .card-margin {
+            margin-bottom: 0.5rem;
+        }
+
+        .card {
+            border: 0;
+            box-shadow: 0px 0px 10px 0px rgba(82, 63, 105, 0.1);
+            -webkit-box-shadow: 0px 0px 10px 0px rgba(82, 63, 105, 0.1);
+            -moz-box-shadow: 0px 0px 10px 0px rgba(82, 63, 105, 0.1);
+            -ms-box-shadow: 0px 0px 10px 0px rgba(82, 63, 105, 0.1);
+        }
+
+        .card {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            min-width: 0;
+            word-wrap: break-word;
+            background-color: #ffffff;
+            background-clip: border-box;
+            border: 1px solid #e6e4e9;
+            border-radius: 8px;
+        }
+
+        .card .card-header.no-border {
+            border: 0;
+        }
+
+        .card .card-header {
+            background: none;
+            padding: 0 0.9375rem;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            min-height: 50px;
+            margin-bottom: 12px;
+        }
+
+        .card-header:first-child {
+            border-radius: calc(8px - 1px) calc(8px - 1px) 0 0;
+        }
+
+
+        .widget-49 .widget-49-title-wrapper {
+            display: flex;
+            align-items: center;
+        }
+
+
+        .widget-49 .widget-49-title-wrapper .widget-49-date-info {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            background-color: #ebf7ff;
+            width: 4rem;
+            height: 4rem;
+            border-radius: 50%;
+        }
+
+        .widget-49 .widget-49-title-wrapper .widget-49-date-base {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            background-color: #f0fafb;
+            width: 4.5rem;
+            height: 4.5rem;
+            padding: 1rem;
+            border-radius: 50%;
+            border: 1px solid #68CBD7;
+        }
+
+        .widget-49 .widget-49-title-wrapper .widget-49-date-base .widget-49-date-day {
+            color: #68CBD7;
+            font-size: 1rem;
+            font-weight: 300;
+            line-height: 1;
+        }
+
+        .widget-49 .widget-49-title-wrapper .widget-49-date-base .widget-49-date-month {
+            color: #68CBD7;
+            font-size: 1rem;
+            font-weight: 300;
+            line-height: 1;
+        }
+
+        .widget-49 .widget-49-title-wrapper .widget-49-date-base .widget-49-date-year {
+            color: #68CBD7;
+            font-size: 1rem;
+            font-weight: 300;
+            line-height: 1;
+
+        }
+
+        .widget-49 .widget-49-title-wrapper .widget-49-date-base .widget-49-date-author {
+            color: #68CBD7;
+            line-height: 1;
+            font-size: 0.75rem;
+            font-weight: 500;
+            text-align: center;
+            cursor: pointer;
+        }
+
+        .widget-49 .widget-49-title-wrapper .widget-49-meeting-info {
+            display: flex;
+            flex-direction: column;
+            margin-right: 0.5rem;
+        }
+
+        .widget-49 .widget-49-meeting-action {
+            text-align: left;
+        }
+
+        .widget-49 .widget-49-meeting-action a {
+            text-transform: uppercase;
+        }
+
+        .footer {
+            height: 8px;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: white;
+            position: relative;
+        }
+
+        .like {
+            float: right;
+            font-size: 14px;
+            position: relative;
+            top: -8px;
+            color: #333333;
+        }
+
+        .fa-gratipay {
+            margin-right: 10px;
+            font-size: 14px;
+        }
+
+        .fa-gratipay:hover {
+            color: #E74C3C;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6" id="accordionExample">
+                <!--<div class="accordion" id="accordionExample">-->
+                <div class="card">
+                    <div class="card-header" id="headingTwo">
+                        <h5 class="card-title">المتنبي</h5>
+                        <hr />
+                    </div>
+                    <div class="card-body pt-0">
+                        <div class="widget-49">
+                            <div class="widget-49-title-wrapper">
+                                <div class="widget-49-date-base">
+                                    <span class="widget-49-date-day">09</span>
+                                    <span class="widget-49-date-month">محرم</span>
+                                    <span class="widget-49-date-year">1443</span>
+                                </div>
+                                <div class="widget-49-meeting-info">
+                                    <div class="row">
+                                        <h6 class="col-lg-12"> وَاحَـرّ قَلْبـاهُ مـمّنْ قَلْبُـهُ شَبِـمُ
+                                        </h6>
+                                        <h6 class="col-lg-12" style="padding-right: 48px;">وَمَنْ بجِسْمـي وَحالي
+                                            عِنـدَهُ سَقَـمُ</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--
+								Twitter, snapchat, facebook, and email me buttons should be here
+								Important: the bottons places must be flexable. I mean if we hide a button its place must not be empty, 
+								all the avialable buttons must be close to each other.
+								side by side: [Twitter] [Snapchat] [Facebook] [email]
+							-->
+                            <div
+                                class="widget-49-meeting-action d-flex justify-content-between pt-3 align-items-center">
+
+                                <div>
+                                    <a class="twitter-share-button mr-1" href="https://twitter.com/intent/tweet/?text=Hello%20world">
+                                        <i class="text-primary fa-brands fa-2x fa-twitter-square"></i>
+                                    </a>
+                                        <span class="mx-1"><i
+                                                class="text-warning fa-brands fa-2x fa-snapchat-square"></i></span>
+                                        <span class="mx-1"><i
+                                                class="text-primary fa-brands fa-2x fa-facebook-square"></i></span>
+                                        <span class="mx-1"><i class="text-danger fa-solid fa-2x fa-envelope"></i></span>
+                                </div>
+
+                                <p><span class="btn-link" style="cursor: pointer;" data-toggle="collapse"
+                                        data-target="#collapseTwo" aria-expanded="false"
+                                        aria-controls="collapseTwo">اقرأ...</span></p>
+                            </div>
+                            <hr />
+                        </div>
+                    </div>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                        <div class="card-body" style="text-align: center;">
+                            <div class="row">
+                                <div class="col-lg-9" style="float: left;">
+                                    وَاحَـرّ قَلْبـاهُ مـمّنْ قَلْبُـهُ شَبِـمُ
+                                </div>
+                                <div class="col-lg-3"></div>
+                                <div class="col-lg-3"></div>
+                                <div class="col-lg-9" style="float: right;">
+                                    وَمَنْ بجِسْمـي وَحالي عِنـدَهُ سَقَـمُ </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-9">
+                                    ما لي أُكَتِّمُ حُبًّا قَدْ بَـرَى جَسَـدي </div>
+                                <div class="col-lg-3"></div>
+                                <div class="col-lg-3"></div>
+                                <div class="col-lg-9">
+                                    وَتَدّعي حُبّ سَيفِ الدّوْلـةِ الأُمَـم ُ </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> <!-- /container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.rtlcss.com/bootstrap/v4.5.3/js/bootstrap.min.js"
+        integrity="sha384-VmD+lKnI0Y4FPvr6hvZRw6xvdt/QZoNHQ4h5k0RL30aGkR9ylHU56BzrE2UoohWK"
+        crossorigin="anonymous"></script>
+    <!--
+    <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/ie10-viewport-bug-workaround.js"></script>
+	-->
+</body>
+
+</html>
