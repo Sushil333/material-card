@@ -218,17 +218,14 @@
                                 class="widget-49-meeting-action d-flex justify-content-between pt-3 align-items-center">
 
                                 <div>
-                                    <a class="mr-1 text-decoration-none"
-                                        href="https://twitter.com/intent/tweet/?text=https://example.com"
-                                        target="_blank">
+                                    <a class="mr-1 text-decoration-none twitter-btn" href="#" target="_blank">
                                         <img src="./statics/twitter.png" width="28" />
                                     </a>
                                     <span class="mx-1 text-decoration-none snapchat-share-button"
                                         data-share-url="https://example.com/">
                                         <img src="./statics/snapchat.png" width="28" />
                                     </span>
-                                    <a href="https://www.facebook.com/sharer/sharer.php?u=example.org" target="_blank"
-                                        class="mx-1 text-decoration-none">
+                                    <a href="#" class="mx-1 text-decoration-none facebook-btn">
                                         <img src="./statics/facebook.png" width="28" />
                                     </a>
                                     <a class="mx-1 text-decoration-none"
@@ -301,6 +298,18 @@
                 document.getElementsByClassName("snapchat-share-button")
             );
         };
+
+        (function () {
+            const postUrl = encodeURI(document.location.href);
+            const postTitle = encodeURI("Hi everyone please check this")
+            const facebookBtn = document.querySelector('.facebook-btn');
+            const twitterBtn = document.querySelector('.twitter-btn');
+            const snapchatBtn = document.querySelector('.snapchat-share-button');
+
+            snapchatBtn.dataset.shareUrl = postUrl;
+            facebookBtn.setAttribute("href", `https://www.facebook.com/sharer/sharer.php?u=${postUrl}&quote=${postTitle}`)
+            twitterBtn.setAttribute("href", `https://twitter.com/intent/tweet/?url=${postUrl}&text=${postTitle}`)
+        })()
     </script>
 </body>
 
