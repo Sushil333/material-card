@@ -10,6 +10,10 @@
     <meta name="author" content="">
     <meta name="robots" content="index, follow" />
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <link rel="stylesheet" href="https://cdn.rtlcss.com/bootstrap/v4.5.3/css/bootstrap.min.css"
         integrity="sha384-JvExCACAZcHNJEc7156QaHXTnQL3hQBixvj5RV5buE7vgnNEzzskDtx9NQ4p6BJe" crossorigin="anonymous" />
 
@@ -176,6 +180,24 @@
         .fa-gratipay:hover {
             color: #E74C3C;
         }
+        .fa-brands, .fa-regular.fa-envelope {
+            padding: 5px;
+            border: 1px solid #333;
+            border-radius: 999px;
+            color: #333;
+            background: #fff;
+            transition: all .3s ease;
+        }
+
+        .fa-brands:hover, .fa-regular.fa-envelope:hover {
+            color: #f8f9fa;
+            background: #333;
+        }
+
+        .fa-brands.fa-facebook-f {
+            padding: 5px 8px;
+
+        }
     </style>
 </head>
 
@@ -219,18 +241,18 @@
 
                                 <div>
                                     <a class="mr-1 text-decoration-none twitter-btn" href="#" target="_blank">
-                                        <img src="./statics/twitter.png" width="28" />
+                                        <i class="fa-brands fa-twitter"></i>
                                     </a>
                                     <span class="mx-1 text-decoration-none snapchat-share-button"
-                                        data-share-url="https://example.com/">
-                                        <img src="./statics/snapchat.png" width="28" />
+                                        data-share-url="https://example.com/" role="button">
+                                        <i class="fa-brands fa-snapchat"></i>
                                     </span>
                                     <a href="#" class="mx-1 text-decoration-none facebook-btn" target="_blank">
-                                        <img src="./statics/facebook.png" width="28" />
+                                        <i class="fa-brands fa-facebook-f"></i>
                                     </a>
                                     <a class="mx-1 text-decoration-none"
                                         href="mailto:?subject=I wanted you to see this site&amp;body=Check out this site http://www.example.com.">
-                                        <img src="./statics/email.png" width="28" />
+                                        <i class="fa-regular fa-envelope"></i>
                                     </a>
                                 </div>
 
